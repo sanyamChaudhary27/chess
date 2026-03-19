@@ -466,6 +466,21 @@ function isInCheck(position, enemyColor) {
     return false;
 }
 
+function checkCheckMate(color, fromPos) {
+    const kingPiece = document.querySelector(`.king.${color}`);
+    if (!kingPiece) return false;
+    const kingPos = kingPiece.parentElement.classList[1];
+    const enemyColor = (color === 'white') ? 'black' : 'white';
+    const possibleMoves = getRawMoves('king', color, kingPos);
+
+    for (let move of possibleMoves) {
+        if (!isInCheck(move, enemyColor)) {
+            return false;
+        }
+    }
+    return true;
+}
+
 function getRawMoves(pieceType, color, position) {
     if (pieceType === 'pawn') return pawnMove(color, position);
     else if (pieceType === 'rook') return rookMove(color, position);
