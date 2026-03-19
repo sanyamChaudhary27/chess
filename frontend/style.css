@@ -31,7 +31,7 @@ body{
     cursor: pointer;
 }
 
-.options{
+/* .options{
     width: 50px;
     height: 50px;
 
@@ -40,7 +40,7 @@ body{
     border-color: #e8e6ff00;
 
     display: inline-block;
-}
+} */
 
 .black{
     font-size: 8vmin;
@@ -84,4 +84,14 @@ body{
 }
 .white-block .colindex {
     color: black;
+}
+
+.whiteMoveHeading{
+    left: 2px;
+    color: white;
+}
+
+.blackMoveHeading{
+    left: 2px;
+    color: white;
 }
