@@ -7,10 +7,10 @@ This project was born out of a personal "intervention." After realizing a growin
 
 
 ## The Mission
-In an era where billions are spent making developers dependent on AI, I wanted to prove that I could build a complex system from scratch in a language relatively new to me. This isn't just a chess game; it's a "warm place" in my portfolio that represents growth, grit, and technical independence.
+In an era where billions are spent making developers dependent on AI, I wanted to prove that I could build a complex system from scratch in a language relatively new to me. This isn't just a chess game; it's a "warm place" in my portfolio that represents growth, grit, and technical independence in the current world where code bases are becoming black boxes.
 
 ## Technical Highlights
-Building a chess engine in pure JS requires managing a massive amount of state and edge cases. 
+Building a chess engine in pure JS requires managing a massive amount of state and edge cases (ex: en-pessant, if a piece can block the check, recusion of king move checks).
 
 * **Custom Move Logic:** Deep-coded movement rules for all pieces, including the "tricky" ones:
     * **En Passant:** Tracking the `lastMove` state to allow for the unique pawn capture.
